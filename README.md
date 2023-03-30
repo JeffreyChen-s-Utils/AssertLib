@@ -2,7 +2,7 @@
 > We have what assert you want, \
 > and what assert you don't want, \
 > enjoy it. \
-> Over 100+ Assertion statement
+> Over 200+ Assertion statement
 
 ### How to use
 ```python
