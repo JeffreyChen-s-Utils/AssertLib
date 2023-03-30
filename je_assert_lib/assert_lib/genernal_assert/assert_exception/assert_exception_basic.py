@@ -6,7 +6,7 @@ from je_assert_lib.utils.assert_fail import assert_fail_message
 def assert_raise(
         function: typing.Callable,
         exception: Exception,
-        when_failure_print_message: str,
+       when_failure_print_message: str = None,
         *args,
         **kwargs
 ):
@@ -20,7 +20,7 @@ def assert_raise(
 def assert_no_raise(
         function: typing.Callable,
         exception: Exception,
-        when_failure_print_message: str,
+       when_failure_print_message: str = None,
         *args,
         **kwargs
 ):

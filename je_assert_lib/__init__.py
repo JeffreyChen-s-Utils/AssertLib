@@ -1,5 +1,5 @@
-from je_assert_lib.assert_lib.detail_assert.assert_file.assert_file import \
-    assert_file_equal, assert_file_not_equal, assert_path_is_file, assert_path_is_not_file, \
+from je_assert_lib.assert_lib.detail_assert.assert_file.assert_file_pathlib import \
+    assert_path_is_file, assert_path_is_not_file, \
     assert_path_as_posix, assert_path_as_uri, assert_path_as_not_uri, assert_path_is_dir, \
     assert_path_is_fifo, assert_path_is_mount, assert_path_is_socket, assert_path_is_absolute, \
     assert_path_is_exists, assert_path_is_reserved, assert_path_is_symlink, assert_path_is_relative_to, \
@@ -51,6 +51,12 @@ from je_assert_lib.assert_lib.genernal_assert.assert_weakref.assert_weak_ref imp
     assert_is_weakset, assert_is_not_weakset, assert_is_weakmethod, assert_is_not_weakkeydictionary, \
     assert_is_weakkeydictionary, assert_is_weakvaluedictionary, assert_is_not_weakvaluedictionary, \
     assert_is_not_weakmethod
+from je_assert_lib.assert_lib.detail_assert.assert_file.assert_file import \
+    assert_file_equal, assert_file_not_equal
+from je_assert_lib.assert_lib.detail_assert.assert_file.assert_file_os import \
+    assert_is_file, assert_is_abs, assert_is_not_file, assert_is_not_dir, \
+    assert_is_dir, assert_is_mount, assert_is_not_mount, assert_is_not_link, \
+    assert_is_link, assert_file_exists, assert_file_not_exists, assert_is_not_abs
 
 __all__ = [
     "assert_file_equal", "assert_file_not_equal", "assert_path_is_file", "assert_path_is_not_file",
@@ -92,5 +98,9 @@ __all__ = [
     "assert_raise", "assert_no_raise",
     "assert_is_weakset", "assert_is_not_weakset", "assert_is_weakmethod", "assert_is_not_weakkeydictionary",
     "assert_is_weakkeydictionary", "assert_is_weakvaluedictionary", "assert_is_not_weakvaluedictionary",
-    "assert_is_not_weakmethod"
+    "assert_is_not_weakmethod",
+    "assert_is_file", "assert_is_abs", "assert_is_not_file", "assert_is_not_dir",
+    "assert_is_dir", "assert_is_mount", "assert_is_not_mount", "assert_is_not_link",
+    "assert_is_link", "assert_file_exists", "assert_file_not_exists", "assert_is_not_abs"
 ]
+

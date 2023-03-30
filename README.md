@@ -2,11 +2,12 @@
 > We have what assert you want, \
 > and what assert you don't want, \
 > enjoy it. \
-> Over 200+ Assertion statement
+> Over 150+ Assertion statement
 
 ### How to use
 ```python
-
+from je_assert_lib import assert_str_is_alnum
+assert_str_is_alnum("12345")
 ```
 ---
 
