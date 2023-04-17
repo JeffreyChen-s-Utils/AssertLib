@@ -5,8 +5,8 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "je_assert_lib"
-version = "0.0.1"
+name = "je_assert_lib_dev"
+version = "0.0.2"
 authors = [
     { name = "JE-Chen", email = "zenmailman@gmail.com" },
 ]
@@ -30,4 +30,4 @@ classifiers = [
 "Homepage" = "https://github.com/JeffreyChen-s-Utils/AssertLib"
 
 [tool.setuptools.packages]
-find = { }
+find = { namespaces = false }
